@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: white;
+    background: #1a1a2e;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* ===== NAVIGATION STYLES ===== */
+      /* ===== NAVIGATION STYLES ===== */
+      /* ===== NAVIGATION STYLES ===== */
+      /* ===== NAVIGATION STYLES ===== */
+      /* ===== NAVIGATION STYLES ===== */
+      /* ===== NAVIGATION STYLES ===== */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(0, 62, 4, 0.95);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo-icon {
+        width: 48px;
+        height: 48px;
+        background: #e2b80e;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1a1a2e;
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+    }
+
+    .logo-main {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .logo-sub {
+        font-size: 0.75rem;
+        color: #facc15;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .nav-menu a {
+        transition: color 0.3s;
+    }
+
+    .nav-menu a:hover {
+        color: #facc15;
+    }
+
+    .burger {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+    .burger:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .burger svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .mobile-menu {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .mobile-menu.active {
+        max-height: 400px;
+        opacity: 1;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: color 0.3s;
+    }
+
+    .mobile-menu a:hover {
+        color: #facc15;
+    }   
+
+    @media (max-width: 768px) {
+        .nav-menu {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: block;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+        }
+
+        .decorative-box,
+        .decorative-circle {
+            display: none;
+        }
+    }
+/* ===== NAVIGATION STYLES ===== */
+/* ===== NAVIGATION STYLES ===== */
+/* ===== NAVIGATION STYLES ===== */
+/* ===== NAVIGATION STYLES ===== */
+/* ===== NAVIGATION STYLES ===== */
+/* ===== NAVIGATION STYLES ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    .hero {
+        position: relative;
+        min-height: 100vh;
+        padding-top: 80px;
+    }
+
+    .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 5rem 1rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+        letter-spacing: 0.05em;
+    }
+
+    .hero-title span {
+        display: block;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        color: #e5e7eb;
+        max-width: 56rem;
+        margin: 0 auto 2rem;
+        line-height: 1.6;
+    }
+
+    .hero-description {
+        font-size: 1.25rem;
+        color: #d1d5db;
+        max-width: 64rem;
+        margin: 0 auto 3rem;
+        line-height: 1.6;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: #facc15;
+        color: #1a1a2e;
+        font-weight: bold;
+        font-size: 1.125rem;
+        padding: 1.25rem 3rem;
+        border-radius: 9999px;
+        transition: all 0.3s;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .cta-button:hover {
+        background: #eab308;
+        transform: scale(1.05);
+    }
+
+    .decorative-box {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 2.5rem;
+        width: 80px;
+        height: 80px;
+        border: 4px solid rgba(250, 204, 21, 0.3);
+        border-radius: 8px;
+        z-index: 2;
+    }
+
+    .decorative-circle {
+        position: absolute;
+        top: 10rem;
+        right: 2.5rem;
+        width: 64px;
+        height: 64px;
+        border: 4px solid rgba(96, 165, 250, 0.3);
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+  
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .hero-title {
+            font-size: 4rem;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .hero-content {
+            padding: 8rem 2rem;
+        }
+
+        .hero-title {
+            font-size: 6rem;
+        }
+    }
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+    /* ===== HERO SECTION STYLES ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+        .solar-section {
+            position: relative;
+            background:  #e2b80e;
+            padding: 6rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .contain {
+            max-width: 80rem;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+        }
+
+        .section-text {
+            font-size: 1.25rem;
+            color: #111827;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 56rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: rgba(0, 62, 4, 0.95);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1.125rem;
+            padding: 1rem 3rem;
+            border-radius: 9999px;
+            border: 3px solid #ffffff;
+            transition: all 0.3s;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background: #111827;
+            color: white;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (min-width: 640px) {
+            .section-text { font-size: 1.125rem; }
+        }
+
+        @media (min-width: 768px) {
+            .section-title { font-size: 3.75rem; }
+            .section-text { font-size: 1.25rem; }
+        }
+
+        /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+        /* ===== second SECTION STYLES ===== */
+
+
+
