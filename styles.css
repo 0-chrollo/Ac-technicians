@@ -46,7 +46,7 @@ a {
         left: 0;
         right: 0;
         z-index: 1000;
-        background: rgb(21, 21, 21);
+        background:#11264d;
         backdrop-filter: blur(10px);
     }
 
@@ -486,20 +486,38 @@ a {
 
         .solar-section-2 {
             position: relative;
-            background:  #e2b80e;
+            background: rgba(0, 0, 0, 0.117);
             padding: 6rem 1rem;
             min-height: 100vh;
             display: flex;
             align-items: center;
+            overflow: hidden;
         }
-
+        
+        .solar-section-2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600');
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            opacity: 0.3;
+            z-index: 1;
+        }
+        
         .contain-2{
+            position: relative;
+            z-index: 2;
             max-width: 80rem;
             margin: 0 auto;
             text-align: center;
             width: 100%;
         }
-
+        
         .section-title-2 {
             font-size: 3rem;
             font-weight: 900;
@@ -507,21 +525,21 @@ a {
             margin-bottom: 3rem;
             line-height: 1.2;
         }
-
+        
         .section-text-2 {
             font-size: 1.25rem;
-            color: #111827;
+            color: #c4c4c6;
             line-height: 1.6;
             margin-bottom: 3rem;
             max-width: 56rem;
             margin-left: auto;
             margin-right: auto;
         }
-
+        
         .cta-btn-2 {
             display: inline-block;
-            background: rgba(0, 62, 4, 0.95);
-            color: #ffffff;
+            background: rgba(255, 255, 255, 0.95);
+            color: #282828;
             font-weight: 600;
             font-size: 1.125rem;
             padding: 1rem 3rem;
@@ -531,19 +549,18 @@ a {
             text-decoration: none;
             cursor: pointer;
         }
-
+        
         .cta-btn-2:hover {
             background: #111827;
             color: white;
         }
-
+        
         /* ===== RESPONSIVE ===== */
         @media (min-width: 640px) {
             .section-text-2 { font-size: 1.125rem; }
         }
-
+        
         @media (min-width: 768px) {
             .section-title-2 { font-size: 3.75rem; }
             .section-text-2 { font-size: 1.25rem; }
         }
-
