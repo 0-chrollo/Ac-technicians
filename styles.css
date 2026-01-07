@@ -485,5 +485,66 @@ a {
         /* ===== second SECTION STYLES ===== */
         /* ===== second SECTION STYLES ===== */
 
+        .solar-section-2 {
+            position: relative;
+            background:  #e2b80e;
+            padding: 6rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
 
+        .contain-2{
+            max-width: 80rem;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section-title-2 {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+        }
+
+        .section-text-2 {
+            font-size: 1.25rem;
+            color: #111827;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 56rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn-2 {
+            display: inline-block;
+            background: rgba(0, 62, 4, 0.95);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1.125rem;
+            padding: 1rem 3rem;
+            border-radius: 9999px;
+            border: 3px solid #ffffff;
+            transition: all 0.3s;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cta-btn-2:hover {
+            background: #111827;
+            color: white;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (min-width: 640px) {
+            .section-text-2 { font-size: 1.125rem; }
+        }
+
+        @media (min-width: 768px) {
+            .section-title-2 { font-size: 3.75rem; }
+            .section-text-2 { font-size: 1.25rem; }
+        }
 
