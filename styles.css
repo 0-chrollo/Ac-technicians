@@ -323,13 +323,16 @@ a {
         font-weight: bold;
         font-size: 1.125rem;
         padding: 1.25rem 3rem;
-        border-radius: 9999px;
+        border-radius: 50px;
+        border: 3px solid white;
         transition: all 0.3s;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     }
 
     .cta-button:hover {
-        background: #eab308;
+        background: white;
+        color:#11264d;
+        border:3px solid  #1c3e7c;;
         transform: scale(1.05);
     }
 
@@ -457,7 +460,7 @@ a {
             font-size: 1.125rem;
             padding: 1rem 3rem;
             border-radius: 9999px;
-            border: 3px solid #ffffff;
+            border: 4px solid #476499;
             transition: all 0.3s;
             text-decoration: none;
             cursor: pointer;
@@ -573,10 +576,11 @@ a {
                         padding: 16px 48px;
                         background-color: #11264d;
                        
-                        color: white;
+                        color:#ffffff;
                         border-radius: 50px;
                         font-size: 16px;
                         font-weight: 600;
+                        border: 4px solid #8fb6ff;
                         text-decoration: none;
                         transition: all 0.3s ease;
                     }
@@ -694,12 +698,12 @@ a {
         
         .cta-btn-2 {
             display: inline-block;
-            background: rgba(255, 255, 255, 0.95);
-            color: #282828;
+            background:  #11264d;
+            color: #ebebeb;
             font-weight: 600;
             font-size: 1.125rem;
             padding: 1rem 3rem;
-            border-radius: 9999px;
+            border-radius: 40px;
             border: 3px solid #ffffff;
             transition: all 0.3s;
             text-decoration: none;
@@ -707,8 +711,9 @@ a {
         }
         
         .cta-btn-2:hover {
-            background: #111827;
-            color: white;
+            background: #ffffff;
+            color:  #111827;
+        
         }
         
         /* ===== RESPONSIVE ===== */
