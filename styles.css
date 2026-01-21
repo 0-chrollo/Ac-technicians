@@ -642,7 +642,7 @@ a {
 
         .solar-section-2 {
             position: relative;
-            background: rgba(0, 0, 0, 0.117);
+            background: rgba(0, 0, 0, 0.457);
             padding: 6rem 1rem;
             min-height: 100vh;
             display: flex;
@@ -657,10 +657,10 @@ a {
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600');
+            background-image: url('background.webp');
             background-size: cover;
             background-position: center;
-            filter: blur(8px);
+            filter: blur(2px);
             opacity: 0.3;
             z-index: 1;
         }
